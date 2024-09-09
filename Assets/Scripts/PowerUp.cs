@@ -14,7 +14,7 @@ public class PowerUp : MonoBehaviour
         {
             PlayerMovement player = collision.GetComponent<PlayerMovement>();
             ApplyPowerUp(player);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

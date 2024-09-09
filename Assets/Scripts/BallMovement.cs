@@ -28,19 +28,23 @@ public class BallMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            rb.velocity *= (1 + speedIncrement * Time.deltaTime * 1000);
+            rb.velocity *= (0.01f + speedIncrement * Time.deltaTime * 1000);
         }
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            Vector2 normal = collision.contacts[0].normal;
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            rb.velocity = Vector2.Reflect(rb.velocity, normal);
-        }
+        //if (collision.gameObject.CompareTag("Wall"))
+        //{
+        //    Vector2 normal = collision.contacts[0].normal;
+        //    Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        //    rb.velocity = Vector2.Reflect(rb.velocity, normal);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Pasó la pelota");
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            Debug.Log("Pasó la pelota");
+        }
+
     }
 
 }

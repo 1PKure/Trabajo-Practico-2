@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8941031026013839017}
   - component: {fileID: 3593166964785314735}
+  - component: {fileID: -3611754127422555912}
+  - component: {fileID: 8294426452169149882}
   m_Layer: 0
   m_Name: Powerup
   m_TagString: Untagged
@@ -73,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a382b4fb306fef94491676e78d3b30de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea0226d412fae5446ac3bf119fa87edd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,3 +86,76 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3611754127422555912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2978542302018529202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fa61d6ba36f324c8ed708bc27feed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpType: 0
+  duration: 5
+--- !u!68 &8294426452169149882
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2978542302018529202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.41616902, y: -0.17873499}
+  - {x: 0.45306912, y: -0.5514974}
+  - {x: 0.31976655, y: -0.63101304}
+  - {x: 0.10171674, y: -0.53576815}
+  - {x: -0.010802552, y: -0.48883778}
+  - {x: -0.12738153, y: -0.5409594}
+  - {x: -0.2035917, y: -0.5674917}
+  - {x: -0.37696972, y: -0.6272818}
+  - {x: -0.45350528, y: -0.5853187}
+  - {x: -0.4178968, y: -0.19290939}
+  - {x: -0.67401457, y: 0.11256286}
+  - {x: -0.61176115, y: 0.232891}
+  - {x: -0.5864808, y: 0.21766746}
+  - {x: -0.28240353, y: 0.3084539}
+  - {x: -0.084542654, y: 0.629239}
+  - {x: 0.076039046, y: 0.62861836}
+  - {x: 0.23341298, y: 0.3219443}
+  - {x: 0.6421051, y: 0.21259196}
+  - {x: 0.65973926, y: 0.047708675}
+  - {x: 0.41717386, y: -0.17926423}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

@@ -14,7 +14,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     void SpawnPowerUp()
     {
-        Vector2 spawnPosition = new Vector2(Random.Range(-5f, 5f), Random.Range(-3f, 3f)); // Ajusta el rango de spawn
+        Vector2 spawnPosition = new Vector2(Random.Range(-10, 8f), Random.Range(-4f, 4f)); // Ajusta el rango de spawn
         poolManager.SpawnPowerUp(spawnPosition);
     }
 }

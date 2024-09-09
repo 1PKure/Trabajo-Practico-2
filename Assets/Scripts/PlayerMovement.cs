@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, movement.y * moveSpeed * Time.deltaTime * 1000);
     }
-    public void SetMovementSpeed (float newSpeed)
+    public void SetMovementSpeed(float newSpeed)
     {
         if (newSpeed > 1)
         {
@@ -54,7 +54,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public float GetMovementSpeed()
-    { 
-        return moveSpeed; 
-    }   
+    {
+        return moveSpeed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Te golpeaste con el obstaculo");
+
+    }
 }
