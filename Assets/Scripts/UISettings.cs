@@ -10,8 +10,8 @@ public class UISettings : MonoBehaviour
     [Header("SliderPanel")]
     [SerializeField] private Slider player1SpeedSlider;
     [SerializeField] private Slider player2SpeedSlider;
-    [SerializeField] private Slider paddleHeightSlider;
-    [SerializeField] private Image playerColorImage;
+    //[SerializeField] private Slider paddleHeightSlider;
+    //[SerializeField] private Image playerColorImage;
     [Header("UIText")]
     [SerializeField] private TextMeshProUGUI player1SpeedText;
     [SerializeField] private TextMeshProUGUI player2SpeedText;
@@ -24,7 +24,7 @@ public class UISettings : MonoBehaviour
     {
         player1SpeedSlider.onValueChanged.AddListener(SetPlayer1Speed);
         player2SpeedSlider.onValueChanged.AddListener(SetPlayer2Speed);
-        paddleHeightSlider.value = player1movement.transform.localScale.y;
+        //paddleHeightSlider.value = player1movement.transform.localScale.y;
 
 
     }
@@ -38,6 +38,7 @@ public class UISettings : MonoBehaviour
 
     }
 
+    /*
     public void OnPaddleHeightChanged()
     {
         // Cambiar el alto de las paletas
@@ -45,7 +46,7 @@ public class UISettings : MonoBehaviour
         player1movement.transform.localScale = newScale;
         player2movement.transform.localScale = newScale;
     }
-
+    */
     public void SetPlayer1Speed(float speed)
     {
         player1movement.SetMovementSpeed(speed);
